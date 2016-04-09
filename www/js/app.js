@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 var App = angular.module('starter', ['ionic']);
 
-var smsInboxPlugin = cordova.require('cordova/plugins/smsinboxplugin');
+var smsInboxPlugin = cordova.require('cordova/plugin/smsinboxplugin');
 
 
  smsInboxPlugin.isSupported ((function(supported) {
