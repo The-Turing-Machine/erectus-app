@@ -40,6 +40,13 @@ module.exports = [
         "clobbers": [
             "window.SMS"
         ]
+    },
+    {
+        "file": "plugins/com.cordova.plugins.sms/www/SmsInboxPlugin.js",
+        "id": "com.cordova.plugins.sms.SmsInboxPlugin",
+        "clobbers": [
+            "window.SmsInboxPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -51,7 +58,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.2",
     "cordova-plugin-whitelist": "1.2.1",
     "ionic-plugin-keyboard": "2.0.1",
-    "cordova-plugin-sms": "1.0.5"
+    "cordova-plugin-sms": "1.0.5",
+    "com.cordova.plugins.sms": "0.1.2"
 };
 // BOTTOM OF METADATA
 });

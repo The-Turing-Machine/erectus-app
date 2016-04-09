@@ -9,6 +9,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:exported="true" android:name="org.apache.cordova.plugin.SmsReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
     <uses-feature android:name="android.hardware.telephony" android:required="false" />

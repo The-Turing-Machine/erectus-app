@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.eractustry702512" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<plugin name="SmsInboxPlugin" value="org.apache.cordova.plugin.SmsInboxPlugin"/>
+    
     <preference name="loglevel" value="DEBUG" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
@@ -22,6 +25,9 @@
     </feature>
     <feature name="SMS">
         <param name="android-package" value="com.rjfun.cordova.sms.SMSPlugin" />
+    </feature>
+    <feature name="SmsInboxPlugin">
+        <param name="android-package" value="org.apache.cordova.plugin.SmsInboxPlugin" />
     </feature>
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />

@@ -31,6 +31,10 @@
                         {
                             "xml": "<feature name=\"SMS\"><param name=\"android-package\" value=\"com.rjfun.cordova.sms.SMSPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SmsInboxPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.SmsInboxPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -70,6 +74,18 @@
                             "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
                             "count": 1
                         }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:exported=\"true\" android:name=\"org.apache.cordova.plugin.SmsReceiver\"><intent-filter android:priority=\"999\"><action android:name=\"android.provider.Telephony.SMS_RECEIVED\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -95,6 +111,9 @@
             "PACKAGE_NAME": "com.ionicframework.eractustry702512"
         },
         "cordova-plugin-sms": {
+            "PACKAGE_NAME": "com.ionicframework.eractustry702512"
+        },
+        "com.cordova.plugins.sms": {
             "PACKAGE_NAME": "com.ionicframework.eractustry702512"
         }
     },
@@ -140,6 +159,13 @@
             "clobbers": [
                 "window.SMS"
             ]
+        },
+        {
+            "file": "plugins/com.cordova.plugins.sms/www/SmsInboxPlugin.js",
+            "id": "com.cordova.plugins.sms.SmsInboxPlugin",
+            "clobbers": [
+                "window.SmsInboxPlugin"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -149,6 +175,7 @@
         "cordova-plugin-statusbar": "2.1.2",
         "cordova-plugin-whitelist": "1.2.1",
         "ionic-plugin-keyboard": "2.0.1",
-        "cordova-plugin-sms": "1.0.5"
+        "cordova-plugin-sms": "1.0.5",
+        "com.cordova.plugins.sms": "0.1.2"
     }
 }

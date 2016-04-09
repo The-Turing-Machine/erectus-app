@@ -27,6 +27,9 @@
         },
         "cordova-plugin-sms": {
             "PACKAGE_NAME": "com.ionicframework.eractustry702512"
+        },
+        "com.cordova.plugins.sms": {
+            "PACKAGE_NAME": "com.ionicframework.eractustry702512"
         }
     },
     "dependent_plugins": {}

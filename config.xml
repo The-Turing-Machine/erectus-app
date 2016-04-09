@@ -7,7 +7,7 @@
   <author email="you@example.com" href="http://example.com.com/">
       Your Name Here
     </author>
-  <content src="http://10.0.0.89:8100" original-src="index.html"/>
+  <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -16,9 +16,7 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
-  
   <plugin name="SmsInboxPlugin" value="org.apache.cordova.plugin.SmsInboxPlugin"/>
-
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
@@ -40,8 +38,6 @@
     <splash src="resources/android/splash/drawable-port-hdpi-screen.png" density="port-hdpi"/>
     <splash src="resources/android/splash/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
-
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
-
-      </platform>
+  </platform>
 </widget>
