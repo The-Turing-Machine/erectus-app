@@ -27,7 +27,7 @@
         <param name="android-package" value="com.rjfun.cordova.sms.SMSPlugin" />
     </feature>
     <feature name="SmsInboxPlugin">
-        <param name="android-package" value="org.apache.cordova.plugin.SmsInboxPlugin" />
+        <param name="android-package" value="org.apache.cordova.plugins.SmsInboxPlugin" />
     </feature>
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
